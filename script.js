@@ -10,7 +10,7 @@ var counter = counterElement.innerText;
 
 
 function decrement() {
-    
+
     if(counter > 0){
         counter--;
         console.log(counter);
@@ -20,13 +20,14 @@ function decrement() {
         alertText.innerText = 'Error : cannot go below 0';
         counterElement.style.fontWeight = 'bold';
     }
+    
 }
 
 function increment() {
     alertText.innerText = '';
     counter++;
     console.log(counter);
-    counterElement.innerText = counter; 
+    counterElement.innerText = counter;
     counterElement.style.fontWeight = 'normal';
 }
 
