@@ -17,7 +17,8 @@ function decrement() {
         counterElement.innerText = counter;
     }
     else {
-        alertText.innerText = 'Error : cannot go below 0'
+        alertText.innerText = 'Error : cannot go below 0';
+        counterElement.style.fontWeight = 'bold';
     }
     
 }
@@ -27,10 +28,11 @@ function increment() {
     counter++;
     console.log(counter);
     counterElement.innerText = counter;
+    counterElement.style.fontWeight = 'normal';
 }
 
 function clear() {
-    counter = 1;
+    counter = 0;
     console.log(counter);
     counterElement.innerText = counter;
 }
