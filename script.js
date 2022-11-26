@@ -23,13 +23,14 @@ function decrement() {
 }
 
 function increment() {
+    alertText.innerText = '';
     counter++;
     console.log(counter);
     counterElement.innerText = counter;
 }
 
 function clear() {
-    counter = 0;
+    counter = 1;
     console.log(counter);
     counterElement.innerText = counter;
 }
